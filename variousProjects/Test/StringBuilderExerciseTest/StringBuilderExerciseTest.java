@@ -1,18 +1,17 @@
 package StringBuilderExerciseTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
 import StringBuilder.StringBuilderExercise;
-import junit.framework.Assert;
+import StringBuilder.nameNotFoundException;
 
 class StringBuilderExerciseTest {
 
-	@Test
-	public void testForStringBuilder() {
-		StringBuilderExercise strng= new StringBuilderExercise();
-		Assert.assertEquals("Hello, John!", strng.hello("John"));
-	}
-
+    @Test
+    public void testForStringBuilder() throws nameNotFoundException {
+        StringBuilderExercise strng = new StringBuilderExercise();
+        assertEquals("Hello, John!", strng.hello("John"));
+    }
 }
